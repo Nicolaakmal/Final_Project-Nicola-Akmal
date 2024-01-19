@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.home-section {
+    background-color: #0056b3;
+    color: white;
+    padding: 60px 0;
+}
+
+.home-section .btn-primary {
+    background-color: #ffc107;
+    border: none;
+}
+
+.about-section img,
+.home-section img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.service-box i {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0056b3;
+    /* Primary color */
+    font-size: 2rem;
+    /* Size of the icon */
+}
+
+.service-box h3 {
+    font-size: 1.25rem;
+}
+
+.service-box p {
+    font-size: 0.9rem;
+}

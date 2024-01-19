@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bowstring Company Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href=".\script\style.css">
+
+</head>
+
+<body onload="displayTodo()">
+
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.jpg" alt="Bowstring" style="width: 40px; height: auto; margin-right: 10px;">
+                Bowstring
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#aboutUs">About Us</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#todos">Todos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container pt-2">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4">Innovate and Thrive with Bowstring</h1>
+                    <p class="lead my-4">Leading the future of the software industry with cutting-edge solutions that
+                        propel your business forward.</p>
+
+                    <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#planModal">Discover
+                        Our Services</button>
+
+                    <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #ffcc00;">
+                                    <h5 class="modal-title" id="planModalLabel">Plan Services</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+
+                    <!-- Bootstrap Carousel -->
+                    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image.jpeg" class="d-block w-100" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image2.jpeg" class="d-block w-100" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image3.jpeg" class="d-block w-100" alt="Third slide">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Highlighting Services Offered -->
+                <div class="row mt-5 text-center">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="bi bi-briefcase" style="font-size: 2rem;"></i>
+                            <h3 style="color: black;">Enterprise Solutions</h3>
+                            <p style="color: black;">Customized software that fits the complex needs of corporate
+                                clients,
+                                ensuring scalability
+                                and security.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="bi bi-code-slash" style="font-size: 2rem;"></i>
+                            <h3 style="color: black;">Product Development</h3>
+                            <p style="color: black;">From concept to code, and development to deployment, we turn your
+                                ideas
+                                into high-value reality.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="bi bi-people" style="font-size: 2rem;"></i>
+                            <h3 style="color: black;">Agile Teams</h3>
+                            <p style="color: black;">Our agile teams quickly adapt to changing requirements to deliver
+                                functional software
+                                promptly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="aboutUs" class="about-section py-5">
+        <div class="container pt-3">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">About Us</h2>
+                    <p>Bowstring is a leader in providing top-notch services and products. Our commitment to quality
+                        and customer satisfaction has made us a favorite among clients. </p>
+                    <p>Our dynamic team thrives on innovation and excellence, consistently delivering solutions that
+                        anticipate the market's future needs. We specialize in creating software that doesn't just serve
+                        a purpose but sets a new standard in technology and user experience.</p>
+                    <p>The heart of our operations lies in a collaborative approach, integrating clients' visions with
+                        our expertise. This synergy drives us to achieve remarkable outcomes, making Bowstring
+                        synonymous with reliability and ingenuity.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="BSD-Green-Office-Park.jpg" class="img-fluid" alt="About us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container pt-3">
+            <h2 class="text-center mb-4">Our Portfolio</h2>
+            <div class="row g-4">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="BSD-Green-Office-Park.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 1</h5>
+                            <p class="card-text">Brief description of Project 1.</p>
+                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="BSD-Green-Office-Park.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">Brief description of Project 2.</p>
+                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="BSD-Green-Office-Park.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">Brief description of Project 3.</p>
+                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container pt-3">
+            <h2 class="text-center mb-4">Latest From Our Blog</h2>
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="BSD-Green-Office-Park.jpg" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post Title 1</h5>
+                            <p class="card-text">This is a summary of the blog post 1.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="BSD-Green-Office-Park.jpg" class="card-img-top" alt="Blog Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post Title 2</h5>
+                            <p class="card-text">This is a summary of the blog post 2.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="BSD-Green-Office-Park.jpg" class="card-img-top" alt="Blog Post 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post Title 3</h5>
+                            <p class="card-text">This is a summary of the blog post 3.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- </body> -->
+
+
+<!-- Todos Section -->
+<section class="vh-100 bg-light" id="todos">
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+            <div class="card shadow col-lg-8">
+                <div class="card-body p-4">
+
+                    <!-- App Title -->
+                    <h2 class="text-center mb-4">My Todos</h2>
+
+                    <!-- Form Add Todo -->
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="add-todo" placeholder="Add new...">
+                            <button type="button" class="btn btn-primary ms-2" onclick="submitTodo()">Add</button>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- List Todo -->
+                    <div id="list-todo" class="list-group">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contactUs" class="contact-section py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow p-4">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer and Script tags -->
+<!-- Footer -->
+<footer class="bg-dark text-white text-center text-lg-start">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Bowstring</h5>
+
+                <p>
+                    Bowstring is dedicated to providing innovative software solutions that drive businesses
+                    towards success.
+                    Our expertise in technology and our commitment to excellence make us the ideal partner for your
+                    company's digital transformation.
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contact</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">+1 234 567 890</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@nicolaakmal.com" class="text-white">contact@bowstring.com</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">123 Street, City, Country</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Follow Us</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" class="text-white me-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#!" class="text-white me-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#!" class="text-white me-4">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#!" class="text-white me-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Bowstring - All rights reserved.
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src=".\script\todos.js"></script>
+
+</body>
+
+</html>
